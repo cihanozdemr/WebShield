@@ -7,6 +7,6 @@ const brandSchema = new mongoose.Schema(
     category: { type: String }, // Örn: "Sosyal Medya", "Banka"
   },
   { timestamps: true },
-); // Verinin ne zaman eklendiğini otomatik tutar
+);
 
 export default mongoose.model('Brand', brandSchema);

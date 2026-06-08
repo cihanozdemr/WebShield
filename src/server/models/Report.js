@@ -8,8 +8,8 @@ const reportSchema = new mongoose.Schema(
       type: String,
       enum: ['PENDING', 'VERIFIED', 'FALSE_ALARM'],
       default: 'PENDING',
-    }, // Durum: Beklemede (PENDING), Onaylandı (VERIFIED) veya Asılsız (FALSE_ALARM)
-    riskScore: { type: Number, default: 0 }, // Algoritmamızın bu URL'ye verdiği puan
+    },
+    riskScore: { type: Number, default: 0 },
   },
   { timestamps: true },
 );

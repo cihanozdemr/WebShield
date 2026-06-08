@@ -10,7 +10,6 @@ export const scanTargetUrl = async (req, res) => {
         .json({ status: 'error', message: 'Taranacak URL eksik!' });
     }
 
-    // Motoru çalıştır ve sonucu al
     const analysisResult = await analyzeUrl(url);
 
     res.status(200).json({

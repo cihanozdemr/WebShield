@@ -2,9 +2,8 @@ import mongoose from 'mongoose';
 
 const connectDB = async () => {
   try {
-    // Linki sildik, yerine kasadaki (env) şifreyi çağırdık
     const conn = await mongoose.connect(process.env.MONGO_URI, {
-      dbName: 'webshield', // Veritabanı inadını kıran o sihirli kodumuz burada kalıyor
+      dbName: 'webshield',
     });
 
     console.log(

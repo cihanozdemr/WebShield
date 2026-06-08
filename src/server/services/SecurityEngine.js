@@ -52,5 +52,4 @@ class SecurityEngine {
   }
 }
 
-// ESM yapısında export default kullanıyoruz
 export default new SecurityEngine();

@@ -8,7 +8,6 @@ export const createReport = async (req, res) => {
       return res.status(400).json({ status: 'error', message: 'URL eksik!' });
     }
 
-    // Gelen URL'yi veritabanına kaydediyoruz
     const newReport = await Report.create({
       reportedUrl: url,
       reportedBy: 'eklenti_test_kullanicisi',
